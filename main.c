@@ -18,13 +18,13 @@ int main(int argc, char *argv[]) {
     printf("%i명 점수를 입력하세요\n", SIZE);
 
     for (i = 0; i < SIZE; i++) {
-        scanf("%d", &testscore[i]);   // & 추가 필요
+        scanf("%d", &testscore[i]);   
         sum += testscore[i];          // 오타 수정: teatscore -> testscore
     }
 
     avg = (float)sum / SIZE;
 
-    printf("총점: %d\n", sum);
+   
     printf("평균: %.2f\n", avg);
 
     return 0;
